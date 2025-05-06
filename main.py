@@ -5,12 +5,10 @@ from product_manager import ProductManager
 manager = ProductManager()
 
 # dodovanje proizvoda
-manager.add_product(Product("Laptop", 1200, 5))
-manager.add_product(Product("Smartphone", 800, 10))
-manager.add_product(Product("Kopfhörer", 150, 20))
+manager.add_product(Product("Gaming-Laptop", 2200, 8))
+manager.add_product(Product("Samsung-Smartphone", 899, 12))
+manager.add_product(Product("Wireless Headphones", 150, 35))
 
 # pregled proizvoda
 manager.display_products()
 
-# vrednost inventara
-print(manager.total_inventory_value())
