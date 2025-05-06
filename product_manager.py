@@ -14,3 +14,6 @@ class ProductManager:
     def total_inventory_value(self):
         total_value = sum(product.price * product.quantity for product in self.products)
         return f"vrednost inventara: {total_value}€"
+
+    def remove_product(self, product_name):
+        self.products = [product for product in self.products if product.name != product_name]
